@@ -3,17 +3,17 @@ description: Validate public apis
 group: migration_validation
 source:
   type: json
-  data: https://gorest.co.in/public/v2/users
+  data: https://jsonplaceholder.typicode.com/photos
   selector: ""
 destination:
   type: json
-  data: http://localhost:8000
+  data: https://gorest.co.in/public/v2/users
   selector: ""
 tests:
   -
-    sourceField: name
-    transform: trim
+    sourceField: title
+    # transform: trim
     destinationField: name
   -
-    sourceField: email
-    destinationField: email
+    sourceField: url
+    destinationField: id

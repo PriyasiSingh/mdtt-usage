@@ -1,6 +1,5 @@
 {
-    "minimum-stability": "alpha",
     "require": {
-        "axelerant/mdtt": "^0.1.4@alpha"
+        "axelerant/mdtt": "dev-main"
     }
 }
